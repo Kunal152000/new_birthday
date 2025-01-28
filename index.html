@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="birthdayCard">
+            <div class="outside">
+                <h1>Happy Birthday</h1>
+                <h3>May your birthday bring you the same joy you bring to everyone around you. I wish you all the success, happiness, and blessings in the world.💕💕 </h3>
+            </div>
+            <div class="inside">
+                <img src="newbdaycake.png" alt="A delicious cake" >
+                <h3>Sending you the best birthday cake with lots of love</h3>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="frames frame1">
+                <img src="img3.jpg" alt="">
+                <p>You have a really pretty smile. Always keep smiling :)</p>
+            </div>
+            <div class="frames frame2">
+                <img src="img2.jpg" alt="">
+                <p>Thanks for coming in my life and making it beautiful</p>
+            </div>
+            <div class="frames frame3">
+                <img src="img1.jpg" alt="">
+                <p>Cheers! for all the upcoming years</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add the Birthday Sound -->
+    <audio id="birthdaySound" src="happy-birthday.mp3" preload="auto" loop></audio>
+
+    <!-- JavaScript to Play Sound -->
+    <script>
+        // Automatically play sound when the page loads
+        window.addEventListener('load', () => {
+            const audio = document.getElementById('birthdaySound');
+            audio.play().catch(error => {
+                console.log("Autoplay prevented by the browser:", error);
+            });
+        });
+    </script>
+</body>
+</html>
